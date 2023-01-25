@@ -8,7 +8,7 @@ import { useState } from "react";
 function App() {
   // 변수
   let number = 0;
-  const [write, setWrite] = useState(["글 1", "글 2", "글 3"]);
+  const [write, setWrite] = useState(["글 1", "플 2", "슬 3"]);
   const [num, setNum] = useState(0);
 
   // 메서드
