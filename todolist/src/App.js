@@ -15,7 +15,6 @@ function App() {
           <div className="list" key={e.id}>
             <input type="checkbox" />
             {e.title}
-
             <button className="deleteButton">X</button>
           </div>
         ))}
