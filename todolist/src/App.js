@@ -3,7 +3,7 @@
 // styled-components를 사용하기 위해
 // npm install @emotion/styled @emotion/react,
 // 로 다운받아야 사용 가능하다.
-import * as S from "./emotion";
+import * as S from "./styles/emotion";
 
 // 기본 css
 import "./App.css";
