@@ -1,25 +1,30 @@
 /* eslint-disable */
 
-// import logo from "./logo.svg";
+// styled-components를 사용하기 위해
+// npm install @emotion/styled @emotion/react,
+// 로 다운받아야 사용 가능하다.
+import * as S from "./emotion";
+
+// 기본 css
 import "./App.css";
 
 function App() {
   let todoData = [{ id: "1", title: "sss", isComplete: false }];
   return (
-    <div className="container">
-      <div className="todoBlock">
-        <div className="title">
+    <S.Container>
+      <S.TodoBlock>
+        <S.Title>
           <h1>할 일 목록</h1>
-        </div>
+        </S.Title>
         {todoData.map((e) => (
-          <div className="list" key={e.id}>
+          <S.List key={e.id}>
             <input type="checkbox" />
             {e.title}
-            <button className="deleteButton">X</button>
-          </div>
+            <S.DeleteButton>X</S.DeleteButton>
+          </S.List>
         ))}
-      </div>
-    </div>
+      </S.TodoBlock>
+    </S.Container>
   );
 }
 
