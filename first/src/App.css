@@ -23,6 +23,11 @@ div {
   border-bottom: 1px solid lightgray;
 }
 
+h4 span,
+.list div {
+  cursor: pointer;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

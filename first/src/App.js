@@ -21,6 +21,8 @@ function App() {
   };
 
   const nameChange = () => {
+    // ...은 참조를 뜻함
+    // copy는 write의 주소를 가리키고 있다는 의미
     let copy = [...write];
     copy[0] = "여자코트 추천";
     setWrite(copy);
